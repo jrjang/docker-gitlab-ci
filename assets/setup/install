@@ -27,8 +27,8 @@ sudo -u gitlab_ci -H mkdir -p ${DATA_DIR}
 
 # shallow clone gitlab-ci
 echo "Cloning gitlab-ci v.${GITLAB_CI_VERSION}..."
-sudo -u gitlab_ci -H git clone -q -b v${GITLAB_CI_VERSION} --depth 1 \
-  https://github.com/gitlabhq/gitlab-ci.git ${INSTALL_DIR}
+sudo -u gitlab_ci -H git clone -q --depth 1 \
+  https://github.com/jrjang/gitlab-ci.git ${INSTALL_DIR}
 
 cd ${INSTALL_DIR}
 
